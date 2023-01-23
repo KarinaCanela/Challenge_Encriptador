@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Challenge - Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <h1><img src="Imagenes/Frame.png" alt="Logo" id="logo"></h1>
+        </header>
+        
+        <textarea id="area-msj" placeholder="Ingrese el texto aqui..."></textarea>
+               
+        <div class="container">
+            <div>
+                <p class="referencia">
+                <img src="Imagenes/bi_exclamation-circle-fill.png" alt="exclamacion" class="circulo"> Solo letras minusculas y sin tilde</p>
+            </div>     
+        </div>
+
+        <div id="botones">
+            <input id="encriptar" type="button" value="Encriptar" onclick="encriptar()">
+            <input id="desencriptar" type="button" value="Desencriptar" onclick="desencriptar()">
+        </div>
+        
+        <section class="container2">
+            <div>
+                <img id="imagen" src="Imagenes/Munheco.png" alt="buscando">
+            </div>
+
+            <p id= "parrafo-msj" >Ningun mensaje fue encontrado</p>
+            <p id= "parrafo2" >Ingresa el texto que deseas encriptar o desencriptar</p>
+                       
+            <div>
+                <input id="btn-copiar" type="button" value="Copiar" onclick="copiarPortapapeles('parrafo-msj')">
+            </div>    
+        </section>   
+        
+        <footer>
+            <p> &#169; Copyrigth Karina Canela Alura - 2023 </p>
+        </footer>
+       
+        <script src="script.js"></script>
+
+    </body>
+    
+</html>
